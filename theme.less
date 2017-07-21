@@ -1,18 +1,112 @@
+@main-color: rgb(219,41,142);
+@transitional: all 0.4s ease;
+
+html, body {
+  background: transparent !important;
+}
+
+#bd-settingspane-container div div div.content-column.default ul li {
+  display: block !important;
+  margin-top: 15px !important;
+  padding: 20px;
+  height: 255px !important;
+  max-height: 355px;
+  overflow: hidden;
+}
+
+div[data-reactid|=".g.$scroller.$pcolumn"] {
+  color:white !important;
+}
+
+input.ui-switch-checkbox[type=checkbox], input.ui-switch-checkbox[type=checkbox]:not([checked]) {
+  -webkit-appearance:none !important;
+  padding: 6px;
+}
+
+input.ui-switch-checkbox[type=checkbox] {
+  @bch: solid 2px;
+  border: @bch green !important;
+  background: lightgreen !important;
+  &:not([checked]) {
+    border: @bch grey !important;
+    background: none !important;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  &-thumb {
+    border: none !important;
+    border-radius: 5px !important;
+    background: @main-color !important;
+  }
+  &-track {
+    border: none !important;
+    border-radius: none !important;
+    background: darken(@main-color, 45%) !important;
+    &-piece {
+      border: none !important;
+      border-radius: none !important;
+      background: darken(@main-color, 45%) !important;
+    }
+  }
+}
+
+.header-1tSljs, .search-bar {
+  background-color: @main-color !important;
+}
+
+.scrollerWrap-2uBjct, .guilds.scroller,
+.container-iksrDt, .flex-spacer, .messages-wrapper,
+.scroller-fzNley, #friends, .friends-table, #friends > .friends-table > .scroller-wrap > .friends-table-body.scroller {
+  background-color: darken(@main-color, 45%) !important;
+}
+
+.title-wrap, #friends > div.friends-header {
+  background: @main-color !important;
+  .tab-bar-item.tab-bar-item-primary {
+    background: darken(@main-color, 45%) !important;
+  }
+}
+
+.markup {
+  a {
+    color:white !important;
+    text-decoration: none;
+    display: block;
+    padding: 10px 5px;
+    background-color: @main-color;
+    transition: @transitional;
+    border-radius: 10px;
+    width: 50% !important;
+    margin: auto !important;
+    &:hover {
+      color:white !important;
+      text-decoration: none;
+      background-color: saturate(lighten(@main-color, 25%), 25%);
+    }
+  }
+}
+
+.flex-spacer {
+  .messages-wrapper {
+  }
+}
+
 div.channel.private {
-  background-color: rgba(100,100,195,1);
+  background-color: darken(@main-color, 25%);
   width: 75%;
   margin:auto;
   margin-top: 15px;
   margin-bottom: 15px;
   border-radius: 15px;
   padding: 10px 19px;
+  transition: @transitional;
   a {
-    div.avatar-small {
-      div.status-online {
-        div.channel.private {
-            background-color: rgba(100,195,100,1);
-        }
-      }
+    background-color: @main-color;
+    transition: @transitional;
+    &:hover {
+      background-color: darken(@main-color, 35%);
     }
   }
 }
@@ -22,6 +116,11 @@ button.win-close:hover {
 }
 button[class|=win]:hover {
     border-radius:10px;
+}
+
+#charcounter {
+  padding-top: 5px;
+  font-size: 11px !important;
 }
 
 div.btn-close {
