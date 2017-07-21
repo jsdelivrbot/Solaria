@@ -1,4 +1,4 @@
-@main-color: rgb(100,100,220);
+@main-color: rgb(50,50,150);
 @transitional: all 0.4s ease;
 
 * {
@@ -15,6 +15,12 @@ background: @main-color !important;
 .connected-account {
 background: @main-color;
 * {color:white !important;}
+}
+
+.channel-textarea > .channel-textarea-inner {
+border: none !important;
+background: @main-color;
+padding: 25px;
 }
 
 .tab-bar.TOP {
@@ -105,8 +111,14 @@ input.ui-switch-checkbox[type=checkbox] {
   background-color: @main-color !important;
 }
 
-.scrollerWrap-2uBjct, .guilds.scroller,
-.container-iksrDt, .flex-spacer, .messages-wrapper,
+.container-iksrDt {
+background: @main-color !important;
+font-weight: bolder;
+font-size: 15px;
+.discriminator {font-size: 16px;}
+}
+
+.scrollerWrap-2uBjct, .guilds.scroller, .flex-spacer, .messages-wrapper,
 .scroller-fzNley, #friends, .friends-table, #friends > .friends-table > .scroller-wrap > .friends-table-body.scroller {
   background-color: darken(@main-color, 45%) !important;
 }
@@ -229,22 +241,29 @@ div.avatar-small {display:none !important;}
 .embed.embed-link {
 border-right: solid 5px currentColor;
 border-left:solid 5px currentColor;
-background: fade(@main-color, 15%) !important;
 }
 
 .embed.embed-link > a > img, .embed.embed-link > a {
 display: block !important;
 }
 
+img {border-radius: 45px;transition:@transitional;&:hover{border-radius:5px;}}
+
 .message-group.hide-overflow {
   border: none !important;
   text-align:center;
-  width: 50%;
+  width: 60%;
   margin-left:auto;
   margin-right:auto;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  background: @main-color;
+  border-radius: 10px;
   .timestamp {display:none;}
-  .user-name {font-size: 25px !important; margin-top: 15px !important; margin-bottom:10px;display:box !important;}
+  .user-name {font-size: 25px !important; display:box !important;}
   div.avatar-large {
     display:none !important;
   }
+  * {margin: auto;text-align:center;}
+&:nth-child(even) {background: darken(@main-color, 25%);;}
 }

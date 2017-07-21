@@ -7,16 +7,21 @@
 div.inner-1_1f7b,
 div#user-profile-modal,
 header.header {
-  background: #6464dc !important;
+  background: #323296 !important;
 }
 .connected-account {
-  background: #6464dc;
+  background: #323296;
 }
 .connected-account * {
   color: white !important;
 }
+.channel-textarea > .channel-textarea-inner {
+  border: none !important;
+  background: #323296;
+  padding: 25px;
+}
 .tab-bar.TOP .tab-bar-item {
-  background-color: #6464dc !important;
+  background-color: #323296 !important;
   color: white !important;
   padding-top: 5px !important;
   padding-left: 10px !important;
@@ -26,12 +31,12 @@ header.header {
   text-shadow: 0 5px 10px currentColor;
 }
 #user-profile-modal > header > div.header-info > div > div > span {
-  color: #6464dc !important;
+  color: #323296 !important;
   font-size: 38px !important;
   font-weight: bold;
 }
 #user-profile-modal > header > div.header-info > div > div > span.discriminator {
-  color: #ffffff !important;
+  color: #b0b0e5 !important;
 }
 .avatar-wrapper,
 avatar-profile {
@@ -43,12 +48,12 @@ body {
 }
 div.containerDefault-7RImuF {
   margin-top: 10px;
-  background: #6464dc;
+  background: #323296;
   cursor: pointer;
 }
 div.containerDefault-7RImuF * {
   background: none;
-  color: #ffffff;
+  color: #b0b0e5;
   text-align: center;
   cursor: pointer;
 }
@@ -85,47 +90,54 @@ input.ui-switch-checkbox[type=checkbox] {
 ::-webkit-scrollbar-thumb {
   border: none !important;
   border-radius: 5px !important;
-  background: #6464dc !important;
+  background: #323296 !important;
 }
 ::-webkit-scrollbar-track {
   border: none !important;
   border-radius: none !important;
-  background: #11114a !important;
+  background: #000000 !important;
 }
 ::-webkit-scrollbar-track-piece {
   border: none !important;
   border-radius: none !important;
-  background: #11114a !important;
+  background: #000000 !important;
 }
 .header-1tSljs,
 .search-bar {
-  background-color: #6464dc !important;
+  background-color: #323296 !important;
+}
+.container-iksrDt {
+  background: #323296 !important;
+  font-weight: bolder;
+  font-size: 15px;
+}
+.container-iksrDt .discriminator {
+  font-size: 16px;
 }
 .scrollerWrap-2uBjct,
 .guilds.scroller,
-.container-iksrDt,
 .flex-spacer,
 .messages-wrapper,
 .scroller-fzNley,
 #friends,
 .friends-table,
 #friends > .friends-table > .scroller-wrap > .friends-table-body.scroller {
-  background-color: #11114a !important;
+  background-color: #000000 !important;
 }
 .title-wrap,
 #friends > div.friends-header {
-  background: #6464dc !important;
+  background: #323296 !important;
 }
 .title-wrap .tab-bar-item.tab-bar-item-primary,
 #friends > div.friends-header .tab-bar-item.tab-bar-item-primary {
-  background: #11114a !important;
+  background: #000000 !important;
 }
 .markup a {
   color: white !important;
   text-decoration: none;
   display: block;
   padding: 10px 5px;
-  background-color: #6464dc;
+  background-color: #323296;
   transition: all 0.4s ease;
   border-radius: 10px;
   width: 50% !important;
@@ -134,10 +146,10 @@ input.ui-switch-checkbox[type=checkbox] {
 .markup a:hover {
   color: white !important;
   text-decoration: none;
-  background-color: #c4c4fb;
+  background-color: #5f5fe8;
 }
 div.channel.private {
-  background-color: #23239d;
+  background-color: #121236;
   width: 75%;
   margin: auto;
   margin-top: 15px;
@@ -148,14 +160,14 @@ div.channel.private {
   transition: all 0.4s ease;
 }
 div.channel.private a {
-  background-color: #6464dc;
+  background-color: #323296;
   transition: all 0.4s ease;
 }
 div.channel.private a span {
   font-size: 18px !important;
 }
 div.channel.private a:hover {
-  background-color: #1a1a73;
+  background-color: #050510;
 }
 button.win-close:hover {
   background-color: red !important;
@@ -203,7 +215,7 @@ div.friends-row .friends-column-actions .friends-action-voice-call:hover {
   margin: auto !important;
 }
 .new-messages-bar {
-  background: #6464dc !important;
+  background: #323296 !important;
   margin-top: 10px;
 }
 .new-messages-bar > button:nth-child(2) {
@@ -215,28 +227,43 @@ div.avatar-small {
 .embed.embed-link {
   border-right: solid 5px currentColor;
   border-left: solid 5px currentColor;
-  background: rgba(100, 100, 220, 0.15) !important;
 }
 .embed.embed-link > a > img,
 .embed.embed-link > a {
   display: block !important;
 }
+img {
+  border-radius: 45px;
+  transition: all 0.4s ease;
+}
+img:hover {
+  border-radius: 5px;
+}
 .message-group.hide-overflow {
   border: none !important;
   text-align: center;
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  background: #323296;
+  border-radius: 10px;
 }
 .message-group.hide-overflow .timestamp {
   display: none;
 }
 .message-group.hide-overflow .user-name {
   font-size: 25px !important;
-  margin-top: 15px !important;
-  margin-bottom: 10px;
   display: box !important;
 }
 .message-group.hide-overflow div.avatar-large {
   display: none !important;
+}
+.message-group.hide-overflow * {
+  margin: auto;
+  text-align: center;
+}
+.message-group.hide-overflow:nth-child(even) {
+  background: #121236;
 }
