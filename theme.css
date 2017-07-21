@@ -1,0 +1,50 @@
+div.channel.private {
+  background-color: #6464c3;
+  width: 75%;
+  margin: auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 10px 19px;
+}
+.status-online div.channel.private {
+  background-color: #64c364;
+}
+button.win-close:hover {
+  background-color: red !important;
+}
+button[class|=win]:hover {
+  border-radius: 10px;
+}
+div.btn-close {
+  border: solid 3px white !important;
+  color: white !important;
+  transition: all 0.5s ease;
+  font-weight: bolder !important;
+}
+div.btn-close:hover {
+  background: rgba(255, 100, 100, 0.9) !important;
+}
+.app.flex-vertical {
+  background: #191919 !important;
+}
+div.friends-row {
+  display: inline-block !important;
+  border: none !important;
+  transition: all 0.2s ease;
+  margin-top: 15px;
+  height: 140px !important;
+  width: 185px;
+  max-height: 290px;
+  max-width: 290px;
+}
+div.friends-row .friends-column-actions {
+  padding-top: 15px;
+}
+div.friends-row .friends-column-actions .friends-action-voice-call:hover {
+  background-color: #649b64 !important;
+}
+/* Messages */
+.message-group.hide-overflow {
+  border: none !important;
+}

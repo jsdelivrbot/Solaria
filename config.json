@@ -1,0 +1,13 @@
+{
+  "info": {
+    "name": "Solaria",
+    "authors": [ "Chubby-Roo" ],
+    "version": "1.0",
+    "description": "For softer views",
+    "repository": "",
+    "homepage": "",
+    "reloadable": true
+  },
+  "defaultSettings": [],
+  "permissions": []
+}
