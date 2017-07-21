@@ -7,7 +7,7 @@ div.channel.private {
   border-radius: 15px;
   padding: 10px 19px;
 }
-.status-online div.channel.private {
+div.channel.private a div.avatar-small div.status-online div.channel.private {
   background-color: #64c364;
 }
 button.win-close:hover {
