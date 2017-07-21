@@ -1,11 +1,60 @@
-@main-color: rgb(219,41,142);
+@main-color: rgb(100,100,220);
 @transitional: all 0.4s ease;
+
+* {
+border:none;
+outline:none;
+padding: 0;
+margin: 0;
+}
+
+div.inner-1_1f7b, div#user-profile-modal, header.header {
+background: @main-color !important;
+}
+
+.connected-account {
+background: @main-color;
+* {color:white !important;}
+}
+
+.tab-bar.TOP {
+.tab-bar-item {
+  background-color:@main-color !important;
+  color:white !important;
+  padding-top: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-shadow: 0 5px 10px currentColor;
+}
+}
+
+#user-profile-modal > header > div.header-info > div > div > span {
+  color:@main-color !important;
+  font-size: 38px !important;
+  font-weight: bold;
+  &.discriminator {
+    color:lighten(@main-color, 40%) !important;
+  }
+}
+
+.avatar-wrapper, avatar-profile {
+  background:none !important;
+}
 
 html, body {
   background: transparent !important;
 }
 
-#bd-settingspane-container div div div.content-column.default ul li {
+div.containerDefault-7RImuF {
+  margin-top: 10px;
+  background: @main-color;
+  * {background: none; color: lighten(@main-color, 40%); text-align:center;cursor:pointer;}
+  cursor:pointer;
+}
+
+/*#bd-settingspane-container div div div.content-column.default ul li {
   display: block !important;
   margin-top: 15px !important;
   padding: 20px;
@@ -31,7 +80,7 @@ input.ui-switch-checkbox[type=checkbox] {
     border: @bch grey !important;
     background: none !important;
   }
-}
+}*/
 
 ::-webkit-scrollbar {
   width: 5px;
@@ -101,10 +150,12 @@ div.channel.private {
   margin-bottom: 15px;
   border-radius: 15px;
   padding: 10px 19px;
+  text-align:center;
   transition: @transitional;
   a {
     background-color: @main-color;
     transition: @transitional;
+    span {font-size: 18px !important;}
     &:hover {
       background-color: darken(@main-color, 35%);
     }
@@ -155,11 +206,45 @@ div.friends-row {
 }
 
 
-
-
 /* Messages */
 
 
+.typing {
+display:box !important;
+text-align:center !important;
+width: 20% !important;
+margin: auto !important;
+}
+
+.new-messages-bar {
+ background: @main-color !important;
+ margin-top: 10px;
+ & > button:nth-child(2) {
+   color:white !important;
+ }
+}
+
+div.avatar-small {display:none !important;}
+
+.embed.embed-link {
+border-right: solid 5px currentColor;
+border-left:solid 5px currentColor;
+background: fade(@main-color, 15%) !important;
+}
+
+.embed.embed-link > a > img, .embed.embed-link > a {
+display: block !important;
+}
+
 .message-group.hide-overflow {
-    border: none !important;
+  border: none !important;
+  text-align:center;
+  width: 50%;
+  margin-left:auto;
+  margin-right:auto;
+  .timestamp {display:none;}
+  .user-name {font-size: 25px !important; margin-top: 15px !important; margin-bottom:10px;display:box !important;}
+  div.avatar-large {
+    display:none !important;
+  }
 }
