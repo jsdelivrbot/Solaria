@@ -1,3 +1,69 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-thumb {
+  border: none !important;
+  border-radius: 5px !important;
+  background: #323296 !important;
+}
+::-webkit-scrollbar-track {
+  border: none !important;
+  border-radius: none !important;
+  background: #000000 !important;
+}
+::-webkit-scrollbar-track-piece {
+  border: none !important;
+  border-radius: none !important;
+  background: #000000 !important;
+}
+.inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .username,
+.inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {
+  font-size: 32px !important;
+  font-weight: bold !important;
+  text-shadow: 0 0 2px black;
+  height: 55px;
+  display: inline-block;
+}
+.inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .username {
+  color: #323296 !important;
+}
+.inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {
+  color: #b0b0e5 !important;
+}
+.inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .activity {
+  font-size: 19px !important;
+}
+.inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .activity strong {
+  font-weight: bolder;
+}
+.inner-1_1f7b #user-profile-modal .tab-bar-container .tab-bar.TOP .tab-bar-item:not(.selected),
+.inner-1_1f7b #user-profile-modal .tab-bar-container .tab-bar.TOP .tab-bar-item.selected {
+  color: white !important;
+  padding-top: 5px !important;
+  padding-left: 10px !important;
+  padding-right: 10px !important;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  text-shadow: 0 5px 10px currentColor;
+}
+.inner-1_1f7b #user-profile-modal .tab-bar-container .tab-bar.TOP .tab-bar-item:not(.selected) {
+  background-color: #323296 !important;
+}
+.inner-1_1f7b #user-profile-modal .tab-bar-container .tab-bar.TOP .tab-bar-item.selected {
+  background-color: #323296 !important;
+}
+.inner-1_1f7b #user-profile-modal .avatar-wrapper {
+  background: none !important;
+}
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account,
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account-icon,
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account-name-inner,
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts a {
+  color: white !important;
+}
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account {
+  background: #323296;
+}
 * {
   border: none;
   outline: none;
@@ -9,42 +75,10 @@ div#user-profile-modal,
 header.header {
   background: #323296 !important;
 }
-.connected-account {
-  background: #323296;
-}
-.connected-account * {
-  color: white !important;
-}
 .channel-textarea > .channel-textarea-inner {
   border: none !important;
   background: #323296;
   padding: 25px;
-}
-.tab-bar.TOP .tab-bar-item {
-  background-color: #323296 !important;
-  color: white !important;
-  padding-top: 5px !important;
-  padding-left: 10px !important;
-  padding-right: 10px !important;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  text-shadow: 0 5px 10px currentColor;
-}
-#user-profile-modal > header > div.header-info > div > div > span {
-  color: #323296 !important;
-  font-size: 38px !important;
-  font-weight: bold;
-}
-#user-profile-modal > header > div.header-info > div > div > span.discriminator {
-  color: #b0b0e5 !important;
-}
-.avatar-wrapper,
-avatar-profile {
-  background: none !important;
-}
-html,
-body {
-  background: transparent !important;
 }
 div.containerDefault-7RImuF {
   margin-top: 10px;
@@ -84,24 +118,6 @@ input.ui-switch-checkbox[type=checkbox] {
     background: none !important;
   }
 }*/
-::-webkit-scrollbar {
-  width: 5px;
-}
-::-webkit-scrollbar-thumb {
-  border: none !important;
-  border-radius: 5px !important;
-  background: #323296 !important;
-}
-::-webkit-scrollbar-track {
-  border: none !important;
-  border-radius: none !important;
-  background: #000000 !important;
-}
-::-webkit-scrollbar-track-piece {
-  border: none !important;
-  border-radius: none !important;
-  background: #000000 !important;
-}
 .header-1tSljs,
 .search-bar {
   background-color: #323296 !important;
@@ -132,21 +148,33 @@ input.ui-switch-checkbox[type=checkbox] {
 #friends > div.friends-header .tab-bar-item.tab-bar-item-primary {
   background: #000000 !important;
 }
-.markup a {
-  color: white !important;
-  text-decoration: none;
-  display: block;
-  padding: 10px 5px;
-  background-color: #323296;
-  transition: all 0.4s ease;
+.message-group.hide-overflow {
+  border: none !important;
+  text-align: center;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  background: #323296;
   border-radius: 10px;
-  width: 50% !important;
-  margin: auto !important;
 }
-.markup a:hover {
-  color: white !important;
-  text-decoration: none;
-  background-color: #5f5fe8;
+.message-group.hide-overflow .timestamp {
+  display: none;
+}
+.message-group.hide-overflow .user-name {
+  font-size: 25px !important;
+  display: box !important;
+}
+.message-group.hide-overflow div.avatar-large {
+  display: none !important;
+}
+.message-group.hide-overflow * {
+  margin: auto;
+  text-align: center;
+}
+.message-group.hide-overflow:nth-child(even) {
+  background: #121236;
 }
 div.channel.private {
   background-color: #121236;
@@ -168,6 +196,19 @@ div.channel.private a span {
 }
 div.channel.private a:hover {
   background-color: #050510;
+}
+div.channel.private:nth-child(even) {
+  background-color: #323296;
+}
+div.channel.private:nth-child(even) a {
+  background-color: #121236;
+  transition: all 0.4s ease;
+}
+div.channel.private:nth-child(even) a span {
+  font-size: 18px !important;
+}
+div.channel.private:nth-child(even) a:hover {
+  background-color: #323296;
 }
 button.win-close:hover {
   background-color: red !important;
@@ -211,8 +252,9 @@ div.friends-row .friends-column-actions .friends-action-voice-call:hover {
 .typing {
   display: box !important;
   text-align: center !important;
-  width: 20% !important;
+  width: 100% !important;
   margin: auto !important;
+  background: #323296 !important;
 }
 .new-messages-bar {
   background: #323296 !important;
@@ -232,38 +274,26 @@ div.avatar-small {
 .embed.embed-link > a {
   display: block !important;
 }
+.markup a {
+  color: white !important;
+  text-decoration: none;
+  display: block;
+  padding: 10px 5px;
+  background-color: #323296;
+  transition: all 0.4s ease;
+  border-radius: 10px;
+  width: 50% !important;
+  margin: auto !important;
+}
+.markup a:hover {
+  color: white !important;
+  text-decoration: none;
+  background-color: #5f5fe8;
+}
 img {
   border-radius: 45px;
   transition: all 0.4s ease;
 }
 img:hover {
   border-radius: 5px;
-}
-.message-group.hide-overflow {
-  border: none !important;
-  text-align: center;
-  width: 60%;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 25px !important;
-  margin-bottom: 25px !important;
-  background: #323296;
-  border-radius: 10px;
-}
-.message-group.hide-overflow .timestamp {
-  display: none;
-}
-.message-group.hide-overflow .user-name {
-  font-size: 25px !important;
-  display: box !important;
-}
-.message-group.hide-overflow div.avatar-large {
-  display: none !important;
-}
-.message-group.hide-overflow * {
-  margin: auto;
-  text-align: center;
-}
-.message-group.hide-overflow:nth-child(even) {
-  background: #121236;
 }

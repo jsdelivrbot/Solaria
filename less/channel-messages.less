@@ -1,0 +1,50 @@
+.message-group.hide-overflow {
+  border: none !important;
+  text-align:center;
+  width: 60%;
+  margin-left:auto;
+  margin-right:auto;
+  margin-top: 25px !important;
+  margin-bottom: 25px !important;
+  background: @main-color;
+  border-radius: 10px;
+  .timestamp {display:none;}
+  .user-name {font-size: 25px !important; display:box !important;}
+  div.avatar-large {
+    display:none !important;
+  }
+  * {margin: auto;text-align:center;}
+&:nth-child(even) {background: darken(@main-color, 25%);;}
+}
+
+div.channel.private {
+  background-color: darken(@main-color, 25%);
+  width: 75%;
+  margin:auto;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 10px 19px;
+  text-align:center;
+  transition: @transitional;
+  a {
+    background-color: @main-color;
+    transition: @transitional;
+    span {font-size: 18px !important;}
+    &:hover {
+      background-color: darken(@main-color, 35%);
+    }
+  }
+
+  &:nth-child(even) {
+    background-color: @main-color;
+    a {
+      background-color: darken(@main-color, 25%);
+      transition: @transitional;
+      span {font-size: 18px !important;}
+      &:hover {
+        background-color: @main-color;
+      }
+    }
+  }
+}
