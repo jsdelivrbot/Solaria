@@ -1,6 +1,10 @@
 @import "./less/main-colors";
 @import "./less/scrollbar";
 @import "./less/user-profile-madal";
+@import "./less/channels";
+@import "./less/friends";
+@import "./less/messages";
+@import "./less/themes-and-packages";
 * {
 border:none;
 outline:none;
@@ -25,9 +29,6 @@ div.containerDefault-7RImuF {
   cursor:pointer;
 }
 
-@import "./less/themes-and-packages";
-
-
 .header-1tSljs, .search-bar {
   background-color: @main-color !important;
 }
@@ -36,6 +37,7 @@ div.containerDefault-7RImuF {
 background: @main-color !important;
 font-weight: bolder;
 font-size: 15px;
+height: 95px !important;
 .discriminator {font-size: 16px;}
 }
 
@@ -50,8 +52,6 @@ font-size: 15px;
     background: darken(@main-color, 45%) !important;
   }
 }
-
-@import "./less/channel-messages";
 
 .flex-spacer {
   .messages-wrapper {
@@ -83,11 +83,6 @@ div.btn-close {
 .app.flex-vertical {
     background: rgba(25,25,25,1) !important;
 }
-
-@import "./less/friends";
-
 /* Messages */
-
-@import "./less/messages";
 
 img {border-radius: 45px;transition:@transitional;&:hover{border-radius:5px;}}
