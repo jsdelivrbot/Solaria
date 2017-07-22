@@ -1,4 +1,6 @@
 .inner-1_1f7b {
+  border: solid 4px @main-color;
+  box-shadow: 0 0 50px 10px @main-color;
   #user-profile-modal {
     .header {
       .header-info {
@@ -48,21 +50,32 @@
     }
     .scroller-wrap.fade {
       .guilds.scroller {
+        box-shadow: 0 0 50px @main-color inset !important;
+        overflow: auto;
         .section {
+          background: @main-color !important;
+          padding: 15px;
+          border-radius: 15px;
+          border: none;
+          margin-top: 10px;
+          * {color:white !important;}
           .section-header {
-
+            font-size: 18px;
           }
           .note {
-
+            background: @main-color !important;
+            textarea {
+              background: none !important;
+              padding: 15px;
+              border-radius: 5px;
+              font-size: 17px;
+            }
           }
           .connected-accounts {
-            .connected-account, .connected-account-icon, .connected-account-name-inner, a {
-              color:white !important;
-              * {color:white !important;}
-            }
             .connected-account {
               background: @main-color;
               .connected-account-icon {
+                display: none;
               }
               .connected-account-name-inner {
               }

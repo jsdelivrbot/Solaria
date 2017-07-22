@@ -4,17 +4,21 @@
 ::-webkit-scrollbar-thumb {
   border: none !important;
   border-radius: 5px !important;
-  background: #323296 !important;
+  background: #6666cb !important;
 }
 ::-webkit-scrollbar-track {
   border: none !important;
   border-radius: none !important;
-  background: #000000 !important;
+  background: #131338 !important;
 }
 ::-webkit-scrollbar-track-piece {
   border: none !important;
   border-radius: none !important;
-  background: #000000 !important;
+  background: #131338 !important;
+}
+.inner-1_1f7b {
+  border: solid 4px #6666cb;
+  box-shadow: 0 0 50px 10px #6666cb;
 }
 .inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .username,
 .inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {
@@ -25,10 +29,10 @@
   display: inline-block;
 }
 .inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .username {
-  color: #323296 !important;
+  color: #6666cb !important;
 }
 .inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .discord-tag .discriminator {
-  color: #b0b0e5 !important;
+  color: #fefeff !important;
 }
 .inner-1_1f7b #user-profile-modal .header .header-info .header-info-inner .activity {
   font-size: 19px !important;
@@ -47,22 +51,45 @@
   text-shadow: 0 5px 10px currentColor;
 }
 .inner-1_1f7b #user-profile-modal .tab-bar-container .tab-bar.TOP .tab-bar-item:not(.selected) {
-  background-color: #323296 !important;
+  background-color: #6666cb !important;
 }
 .inner-1_1f7b #user-profile-modal .tab-bar-container .tab-bar.TOP .tab-bar-item.selected {
-  background-color: #323296 !important;
+  background-color: #6666cb !important;
 }
 .inner-1_1f7b #user-profile-modal .avatar-wrapper {
   background: none !important;
 }
-.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account,
-.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account-icon,
-.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account-name-inner,
-.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts a {
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller {
+  box-shadow: 0 0 50px #6666cb inset !important;
+  overflow: auto;
+}
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section {
+  background: #6666cb !important;
+  padding: 15px;
+  border-radius: 15px;
+  border: none;
+  margin-top: 10px;
+}
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section * {
   color: white !important;
 }
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .section-header {
+  font-size: 18px;
+}
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .note {
+  background: #6666cb !important;
+}
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .note textarea {
+  background: none !important;
+  padding: 15px;
+  border-radius: 5px;
+  font-size: 17px;
+}
 .inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account {
-  background: #323296;
+  background: #6666cb;
+}
+.inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account .connected-account-icon {
+  display: none;
 }
 * {
   border: none;
@@ -73,21 +100,21 @@
 div.inner-1_1f7b,
 div#user-profile-modal,
 header.header {
-  background: #323296 !important;
+  background: #6666cb !important;
 }
 .channel-textarea > .channel-textarea-inner {
   border: none !important;
-  background: #323296;
+  background: #6666cb;
   padding: 25px;
 }
 div.containerDefault-7RImuF {
   margin-top: 10px;
-  background: #323296;
+  background: #6666cb;
   cursor: pointer;
 }
 div.containerDefault-7RImuF * {
   background: none;
-  color: #b0b0e5;
+  color: #fefeff;
   text-align: center;
   cursor: pointer;
 }
@@ -120,10 +147,10 @@ input.ui-switch-checkbox[type=checkbox] {
 }*/
 .header-1tSljs,
 .search-bar {
-  background-color: #323296 !important;
+  background-color: #6666cb !important;
 }
 .container-iksrDt {
-  background: #323296 !important;
+  background: #6666cb !important;
   font-weight: bolder;
   font-size: 15px;
 }
@@ -138,15 +165,15 @@ input.ui-switch-checkbox[type=checkbox] {
 #friends,
 .friends-table,
 #friends > .friends-table > .scroller-wrap > .friends-table-body.scroller {
-  background-color: #000000 !important;
+  background-color: #131338 !important;
 }
 .title-wrap,
 #friends > div.friends-header {
-  background: #323296 !important;
+  background: #6666cb !important;
 }
 .title-wrap .tab-bar-item.tab-bar-item-primary,
 #friends > div.friends-header .tab-bar-item.tab-bar-item-primary {
-  background: #000000 !important;
+  background: #131338 !important;
 }
 .message-group.hide-overflow {
   border: none !important;
@@ -156,7 +183,7 @@ input.ui-switch-checkbox[type=checkbox] {
   margin-right: auto;
   margin-top: 25px !important;
   margin-bottom: 25px !important;
-  background: #323296;
+  background: #6666cb;
   border-radius: 10px;
 }
 .message-group.hide-overflow .timestamp {
@@ -174,41 +201,44 @@ input.ui-switch-checkbox[type=checkbox] {
   text-align: center;
 }
 .message-group.hide-overflow:nth-child(even) {
-  background: #121236;
+  background: #2d2d84;
 }
 div.channel.private {
-  background-color: #121236;
+  background-color: #2d2d84;
   width: 75%;
+  height: 95px !important;
   margin: auto;
-  margin-top: 15px;
-  margin-bottom: 15px;
+  margin-top: 55px;
+  margin-bottom: 55px;
   border-radius: 15px;
   padding: 10px 19px;
   text-align: center;
   transition: all 0.4s ease;
 }
 div.channel.private a {
-  background-color: #323296;
+  margin: auto !important;
+  background-color: #6666cb;
+  height: 90px !important;
   transition: all 0.4s ease;
 }
 div.channel.private a span {
   font-size: 18px !important;
 }
 div.channel.private a:hover {
-  background-color: #050510;
+  background-color: #20205e;
 }
 div.channel.private:nth-child(even) {
-  background-color: #323296;
+  background-color: #6666cb;
 }
 div.channel.private:nth-child(even) a {
-  background-color: #121236;
+  background-color: #2d2d84;
   transition: all 0.4s ease;
 }
 div.channel.private:nth-child(even) a span {
   font-size: 18px !important;
 }
 div.channel.private:nth-child(even) a:hover {
-  background-color: #323296;
+  background-color: #6666cb;
 }
 button.win-close:hover {
   background-color: red !important;
@@ -254,10 +284,10 @@ div.friends-row .friends-column-actions .friends-action-voice-call:hover {
   text-align: center !important;
   width: 100% !important;
   margin: auto !important;
-  background: #323296 !important;
+  background: #6666cb !important;
 }
 .new-messages-bar {
-  background: #323296 !important;
+  background: #6666cb !important;
   margin-top: 10px;
 }
 .new-messages-bar > button:nth-child(2) {
@@ -279,7 +309,7 @@ div.avatar-small {
   text-decoration: none;
   display: block;
   padding: 10px 5px;
-  background-color: #323296;
+  background-color: #6666cb;
   transition: all 0.4s ease;
   border-radius: 10px;
   width: 50% !important;
@@ -288,7 +318,7 @@ div.avatar-small {
 .markup a:hover {
   color: white !important;
   text-decoration: none;
-  background-color: #5f5fe8;
+  background-color: #bbbbf5;
 }
 img {
   border-radius: 45px;
