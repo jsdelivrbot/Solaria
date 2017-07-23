@@ -1,0 +1,31 @@
+div.channel.private
+  background-color: darken($main-color, 25%)
+  width: 75%
+  height: 95px !important
+  margin:auto
+  margin-top: $margin-channels-padding
+  margin-bottom: $margin-channels-padding
+  border-radius: 15px
+  padding: 10px 19px
+  text-align: center
+  transition: $transitional
+  a
+    margin: auto !important
+    background-color: $main-color
+    height: 90px !important
+    transition: $transitional
+    span
+      font-size: 18px !important
+    &:hover
+      background-color: darken($main-color, 35%)
+
+
+  &:nth-child(even)
+    background-color: $main-color
+    a
+      background-color: darken($main-color, 25%)
+      transition: $transitional
+      span
+        font-size: 18px !important
+      &:hover
+        background-color: $main-color
