@@ -2,7 +2,7 @@
   width: 0.9rem; }
   ::-webkit-scrollbar-thumb {
     border: none !important;
-    border-radius: none !important;
+    border-radius: 0 !important;
     background: #8161de !important; }
   ::-webkit-scrollbar-track {
     border: none !important;
@@ -69,26 +69,39 @@
         .inner-1_1f7b #user-profile-modal .scroller-wrap.fade .guilds.scroller .section .connected-accounts .connected-account .connected-account-icon {
           display: none; }
 
-div.channel.private {
-  background-color: #41219e;
-  width: 75%;
-  height: 95px !important;
-  margin: auto;
-  margin-top: 55px;
-  margin-bottom: 55px;
-  border-radius: 15px;
-  padding: 10px 19px;
-  text-align: center;
-  transition: all 0.4s ease; }
-  div.channel.private a {
-    margin: auto !important;
-    background-color: #8161de;
-    height: 90px !important;
-    transition: all 0.4s ease; }
-    div.channel.private a span {
-      font-size: 18px !important; }
-    div.channel.private a:hover {
-      background-color: #301874; }
+div.scroller-fzNley {
+  background: #1e0f4a; }
+  div.scroller-fzNley span div.channel.private {
+    background-color: #41219e;
+    width: 75%;
+    height: 45px !important;
+    transition: all 0.2s ease;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    border-radius: 15px;
+    padding: 10px 19px;
+    text-align: center;
+    transition: all 0.2s ease; }
+    div.scroller-fzNley span div.channel.private a {
+      margin: auto !important;
+      background: #8161de;
+      height: 40px !important;
+      width: 85%;
+      transition: all 0.2s ease; }
+      div.scroller-fzNley span div.channel.private a span {
+        font-size: 18px !important;
+        transition: all 0.2s ease; }
+      div.scroller-fzNley span div.channel.private a:hover {
+        background-color: #301874; }
+    div.scroller-fzNley span div.channel.private:hover {
+      margin-top: 35px;
+      margin-bottom: 35px;
+      width: 95%;
+      border-radius: 0px; }
+      div.scroller-fzNley span div.channel.private:hover a {
+        margin: auto !important;
+        width: 95%; }
 
 div.friends-row {
   display: inline-block !important;
@@ -124,7 +137,7 @@ div.friends-row {
     background: transparent;
     margin-bottom: 15px;
     border: none !important;
-    transition: all 0.4s ease; }
+    transition: all 0.2s ease; }
     .chat .content .messages-wrapper .scroller-wrap .messages.scroller .message-group.hide-overflow:hover {
       margin-top: 25px;
       background: rgba(255, 255, 255, 0.3); }
@@ -138,7 +151,7 @@ div.friends-row {
         display: block !important;
         width: 100% !important;
         text-align: center !important;
-        transition: all 0.4s ease;
+        transition: all 0.2s ease;
         font-size: 18px !important;
         font-weight: bolder !important; }
         .chat .content .messages-wrapper .scroller-wrap .messages.scroller .message-group.hide-overflow .comment .message .body .old-h2 .timestamp:hover {
@@ -153,9 +166,17 @@ div.friends-row {
           font-size: 28px !important;
           font-weight: bolder !important; }
 
-.inner-3if5cm {
-  background: rgba(56, 29, 137, 0.5) !important;
-  box-shadow: none !important; }
+div.flex-spacer.flex-vertical form {
+  background: rgba(30, 15, 74, 0.5) !important;
+  margin: 0px; }
+  div.flex-spacer.flex-vertical form .inner-3if5cm {
+    width: 60% !important;
+    margin: auto !important;
+    background: #8161de !important;
+    box-shadow: none !important;
+    transition: all 0.2s ease; }
+    div.flex-spacer.flex-vertical form .inner-3if5cm:hover {
+      width: 80% !important; }
 
 * {
   border: none;

@@ -1,3 +1,13 @@
-.inner-3if5cm
-  background: darken(rgba(129,97,222,.5), 30%) !important
-  box-shadow: none !important
+div.flex-spacer.flex-vertical
+  form
+    background: transparentize(darken($main-color, 45%), .5) $imp
+    margin: 0px
+
+    .inner-3if5cm
+      width: 60% $imp
+      margin: auto $imp
+      background: $main-color $imp
+      box-shadow: none $imp
+      transition: $transitional
+      &:hover
+        width: 80% $imp

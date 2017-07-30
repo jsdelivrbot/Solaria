@@ -1,20 +1,36 @@
-div.channel.private
-  background-color: darken($main-color, 25%)
-  width: 75%
-  height: 95px !important
-  margin: auto
-  margin-top: $margin-channels-padding
-  margin-bottom: $margin-channels-padding
-  border-radius: 15px
-  padding: 10px 19px
-  text-align: center
-  transition: $transitional
-  a
-    margin: auto !important
-    background-color: $main-color
-    height: 90px !important
-    transition: $transitional
-    span
-      font-size: 18px !important
-    &:hover
-      background-color: darken($main-color, 35%)
+div.scroller-fzNley
+  background: darken($main-color, 45%)
+  span
+    div.channel.private
+      background-color: darken($main-color, 25%)
+      width: 75%
+      height: $channel-height $imp
+      transition: $transitional
+      margin: auto
+      margin:
+        top: $margin-channels-padding
+        bottom: $margin-channels-padding
+      border-radius: 15px
+      padding: 10px 19px
+      text-align: center
+      transition: $transitional
+      a
+        margin: auto $imp
+        background: $main-color
+        height: $channel-height - 5 $imp
+        width: $channel-inner-width
+        transition: $transitional
+        span
+          font-size: 18px $imp
+          transition: $transitional
+        &:hover
+          background-color: darken($main-color, 35%)
+      &:hover
+        margin:
+          top: $margin-channels-padding + 10
+          bottom: $margin-channels-padding + 10
+        width: 95%
+        border-radius: 0px
+        a
+          margin: auto $imp
+          width: $channel-inner-width + 10
