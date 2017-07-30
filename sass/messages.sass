@@ -30,7 +30,8 @@
             border: none $imp
             transition: $transitional
             &:hover
-              margin: 25px
+              margin:
+                top: 25px
               background: rgba(255,255,255,.3)
             & [class|="avatar"]
               display: none $imp
@@ -59,7 +60,7 @@
                       width: 100% $imp
                       text-align: center $imp
                       .user-name
-                        color: $main-color $imp
+                        color: lighten($main-color, 20%) $imp
                         font:
                           size: 28px $imp
                           weight: bolder $imp

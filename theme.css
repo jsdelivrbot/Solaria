@@ -2,7 +2,7 @@
   width: 0.9rem; }
   ::-webkit-scrollbar-thumb {
     border: none !important;
-    border-radius: 5px !important;
+    border-radius: none !important;
     background: #8161de !important; }
   ::-webkit-scrollbar-track {
     border: none !important;
@@ -73,6 +73,7 @@ div.channel.private {
   background-color: #41219e;
   width: 75%;
   height: 95px !important;
+  margin: auto;
   margin-top: 55px;
   margin-bottom: 55px;
   border-radius: 15px;
@@ -125,7 +126,7 @@ div.friends-row {
     border: none !important;
     transition: all 0.4s ease; }
     .chat .content .messages-wrapper .scroller-wrap .messages.scroller .message-group.hide-overflow:hover {
-      margin: 25px;
+      margin-top: 25px;
       background: rgba(255, 255, 255, 0.3); }
     .chat .content .messages-wrapper .scroller-wrap .messages.scroller .message-group.hide-overflow [class|="avatar"] {
       display: none !important; }
@@ -148,12 +149,12 @@ div.friends-row {
         width: 100% !important;
         text-align: center !important; }
         .chat .content .messages-wrapper .scroller-wrap .messages.scroller .message-group.hide-overflow .comment .message .body .old-h2 .username-wrapper .user-name {
-          color: #8161de !important;
+          color: #c4b5f0 !important;
           font-size: 28px !important;
           font-weight: bolder !important; }
 
 .inner-3if5cm {
-  background: #381d89 !important;
+  background: rgba(56, 29, 137, 0.5) !important;
   box-shadow: none !important; }
 
 * {
