@@ -2,45 +2,67 @@
 
   .title-wrap
     background: $main-color $imp
+
     .header-toolbar
       margin-left: 5px $imp
+
     .channel-name
       margin:
         left: 5px $imp
         right: 5px $imp
+
     .title
       a::before
         color: white $imp
         font-weight: bold $imp
+
       .status
         border-radius: 100% $imp
 
+
   .content
     background: darken($main-color, 45%) $imp
+
     .messages-wrapper, form
       background: transparent $imp
 
     .messages-wrapper
+
       .scroller-wrap
+
         .messages.scroller
+
           .message-group.hide-overflow
             background: transparent
             margin:
               bottom: 15px
             border: none $imp
             transition: $transitional
+
             &:hover
               margin:
                 top: 25px
               background: rgba(255,255,255,.3)
+
             & [class|="avatar"]
               display: none $imp
+
             .comment
+
               .message
                 display: block $imp
                 width: 100% $imp
                 text-align: center $imp
+
                 .body
+
+                  .message-text
+                    .btn-option, .btn-reaction
+                      display: block $imp
+
+                    .markup
+                      display: block $imp
+
                   .old-h2
                     .timestamp
                       display: block $imp
@@ -50,6 +72,7 @@
                       font:
                         size: 18px $imp
                         weight: bolder $imp
+
                       &:hover
                         color: white
                         font:
@@ -59,6 +82,7 @@
                       display: block $imp
                       width: 100% $imp
                       text-align: center $imp
+
                       .user-name
                         color: lighten($main-color, 20%) $imp
                         font:
