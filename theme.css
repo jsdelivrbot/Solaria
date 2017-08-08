@@ -109,6 +109,7 @@ div.friends-row {
   transition: all 0.2s ease;
   margin-top: 15px;
   height: 140px !important;
+  background: transparent !important;
   width: 185px;
   max-height: 290px;
   max-width: 290px; }
@@ -116,6 +117,15 @@ div.friends-row {
     padding-top: 15px; }
     div.friends-row .friends-column-actions .friends-action-voice-call:hover {
       background-color: #649b64 !important; }
+
+#friends {
+  background: #270707 !important; }
+  #friends .friends-header {
+    background: #da3a3a !important; }
+  #friends .friends-table {
+    background: transparent !important; }
+    #friends .friends-table-body, #friends .friends-table-header, #friends .friends-table .scroller-wrap {
+      background: transparent !important; }
 
 .chat .title-wrap {
   background: #da3a3a !important; }
@@ -170,6 +180,37 @@ div.friends-row {
           font-size: 28px !important;
           font-weight: bolder !important; }
 
+#bd-settingspane-container.content-region .scroller-wrap.fade.dark[data-reactid=".1"] .scroller {
+  background: #270707 !important; }
+  #bd-settingspane-container.content-region .scroller-wrap.fade.dark[data-reactid=".1"] .scroller .content-column.default .bda-slist[data-reactid=".1.$scroller.$pcolumn.1:$plugin-list"] li[data-reactid^=".1.$scroller.$pcolumn.1:$plugin-list"] {
+    display: block !important;
+    margin-top: 15px !important;
+    padding: 20px;
+    height: 255px !important;
+    max-height: 355px;
+    overflow: hidden;
+    border: dashed 2px red; }
+    #bd-settingspane-container.content-region .scroller-wrap.fade.dark[data-reactid=".1"] .scroller .content-column.default .bda-slist[data-reactid=".1.$scroller.$pcolumn.1:$plugin-list"] li[data-reactid^=".1.$scroller.$pcolumn.1:$plugin-list"] div.bda-left span.bda-name {
+      font-size: 32px !important;
+      height: 85px;
+      max-height: 555px !important; }
+    #bd-settingspane-container.content-region .scroller-wrap.fade.dark[data-reactid=".1"] .scroller .content-column.default .bda-slist[data-reactid=".1.$scroller.$pcolumn.1:$plugin-list"] li[data-reactid^=".1.$scroller.$pcolumn.1:$plugin-list"] div.bda-left .scroller-wrap {
+      margin-top: 10px;
+      border: none !important;
+      padding: 10px;
+      color: white; }
+
+input.ui-switch-checkbox[type=checkbox], input.ui-switch-checkbox[type=checkbox]:not([checked]) {
+  -webkit-appearance: none !important;
+  padding: 6px; }
+
+input.ui-switch-checkbox[type=checkbox] {
+  border: solid 2px green !important;
+  background: lightgreen !important; }
+  input.ui-switch-checkbox[type=checkbox]:not([checked]) {
+    border: solid 2px grey !important;
+    background: none !important; }
+
 div.flex-spacer.flex-vertical form {
   background: rgba(39, 7, 7, 0.5) !important;
   margin: 0px; }
@@ -193,6 +234,16 @@ div.flex-spacer.flex-vertical form {
   transition: all 0.2s ease; }
   #app-mount > div > div:nth-child(2) > div > div.layers.flex-vertical.flex-spacer > div:nth-child(2) > div > div.sidebar-region > div > div > div > div > div[class|=itemDefaultSelected]:hover {
     background: #de4f4f; }
+
+.guilds.scroller {
+  background: #de4f4f; }
+
+.tooltip {
+  border: solid 2px #da3a3a !important;
+  background: rgba(218, 58, 58, 0.5) !important; }
+
+html, body {
+  background: transparent !important; }
 
 * {
   border: none;

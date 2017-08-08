@@ -1,25 +1,36 @@
-//   #bd-settingspane-container div div div.content-column.default ul li
-//   display: block !important
-//   margin-top: 15px !important
-//   padding: 20px
-//   height: 255px !important
-//   max-height: 355px
-//   overflow: hidden
-//
-//
-// div[data-reactid|=".g.$scroller.$pcolumn"]
-//   color:white !important
-//
-//
-// input.ui-switch-checkbox[type=checkbox], input.ui-switch-checkbox[type=checkbox]:not([checked])
-//   -webkit-appearance:none !important
-//   padding: 6px
-//
-//
-// input.ui-switch-checkbox[type=checkbox]
-//   @bch: solid 2px
-//   border: @bch green !important
-//   background: lightgreen !important
-//   &:not([checked])
-//     border: @bch grey !important
-//     background: none !important
+#bd-settingspane-container.content-region
+  .scroller-wrap.fade.dark[data-reactid=".1"]
+    .scroller
+      background: darken($main-color, 45%) $imp
+      .content-column.default
+        .bda-slist[data-reactid=".1.$scroller.$pcolumn.1:$plugin-list"]
+          li[data-reactid^=".1.$scroller.$pcolumn.1:$plugin-list"]
+            display: block $imp
+            margin-top: 15px $imp
+            padding: 20px
+            height: 255px $imp
+            max-height: 355px
+            overflow: hidden
+            border: dashed 2px red
+            div.bda-left
+              span.bda-name
+                font-size: 32px $imp
+                height: 85px
+                max-height: 555px $imp
+              .scroller-wrap
+                margin-top: 10px
+                border: none $imp
+                padding: 10px
+                color: white
+
+input.ui-switch-checkbox[type=checkbox], input.ui-switch-checkbox[type=checkbox]:not([checked])
+  -webkit-appearance: none $imp
+  padding: 6px
+
+input.ui-switch-checkbox[type=checkbox]
+  $bch: solid 2px
+  border: $bch green $imp
+  background: lightgreen $imp
+  &:not([checked])
+    border: $bch grey $imp
+    background: none $imp
